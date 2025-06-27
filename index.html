@@ -11,11 +11,12 @@
       box-sizing: border-box;
     }
 
-   body {
-  background: #0d0d0d;
-  color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+    body {
+      background: #0d0d0d;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
     .fade-in {
       opacity: 0;
       animation: fadeIn 1.2s ease-out forwards;
@@ -62,8 +63,8 @@
     }
 
     .mockup img {
-      width: 80%;
-      max-width: 800px;
+      width: 40%;
+      max-width: 400px;
       border-radius: 12px;
       box-shadow: 0 0 40px rgba(0, 255, 170, 0.12);
     }
@@ -85,11 +86,12 @@
     }
 
     ul.features {
-      text-align: left;
+      text-align: center;
       max-width: 800px;
       margin: 30px auto;
       font-size: 1.05em;
       color: #ccc;
+      list-style-position: inside;
     }
 
     ul.features li {
@@ -160,19 +162,19 @@
       50% { border-color: #00ff88; }
     }
 
-    .screenshots {
+    .video-wrapper {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
       margin-top: 40px;
     }
 
-    .screenshots img {
-      width: 280px;
-      border-radius: 8px;
-      border: 1px solid #222;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    .video-wrapper iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 0 30px rgba(0, 255, 170, 0.2);
     }
 
     .reviews {
@@ -242,11 +244,9 @@
   </section>
 
   <section class="section fade-in">
-    <h2>Showcase</h2>
-    <div class="screenshots">
-      <img src="image.jpg" alt="Screenshot 1" />
-      <img src="image2.jpg" alt="Screenshot 2" />
-      <img src="image3.jpg" alt="Screenshot 3" />
+    <h2>How to Install</h2>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" allowfullscreen></iframe>
     </div>
   </section>
 
@@ -263,6 +263,26 @@ Get Key.
 After that press Inject and inside of File of Roblox Studio press Open with, and find Telemontis.
       </div>
     </div>
+  </section>
+
+  <section class="section fade-in">
+    <h2>FAQ</h2>
+    <ul class="features">
+      <li><strong>Q: Is Telemontis safe to use?</strong><br>A: Yes. Everything runs locally — no internet uploads or hidden scripts.</li>
+      <li><strong>Q: Can I use Telemontis on Mac?</strong><br>A: Currently, only Windows is supported.</li>
+      <li><strong>Q: Do I need Blender installed?</strong><br>A: Only if you're exporting to custom rigs. For normal use, Blender isn't required.</li>
+      <li><strong>Q: What file types are supported?</strong><br>A: MP4 videos are currently supported for animation input.</li>
+      <li><strong>Q: Is R6 animation supported?</strong><br>A: Yes! Telemontis works with R6, R15, and even custom humanoid rigs.</li>
+    </ul>
+  </section>
+
+  <section class="section fade-in">
+    <h2>Changelog</h2>
+    <ul class="features">
+      <li>🛠️ <strong>v1.3</strong> — Added Blender export support, smoother motion transitions.</li>
+      <li>⚡ <strong>v1.2</strong> — Added full R6 rig support and improved performance.</li>
+      <li>🚀 <strong>v1.0</strong> — Initial release with MP4-to-Roblox animation support.</li>
+    </ul>
   </section>
 
   <section class="reviews fade-in">
