@@ -12,9 +12,12 @@
     }
 
     body {
-      background: #0d0d0d;
+      background: url('https://images.unsplash.com/photo-1533612608997-212b06408bb9?blur=100') no-repeat center center fixed;
+      background-size: cover;
       color: #fff;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
     }
 
     .fade-in {
@@ -31,6 +34,14 @@
     header {
       text-align: center;
       padding: 100px 20px 40px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 60px;
     }
 
     header h1 {
@@ -51,6 +62,7 @@
     .mockup {
       text-align: center;
       margin-top: 40px;
+      animation: fadeIn 1.5s ease-out forwards;
     }
 
     .mockup img {
@@ -65,6 +77,7 @@
       max-width: 1000px;
       margin: 0 auto;
       text-align: center;
+      animation: fadeIn 1.7s ease-out forwards;
     }
 
     .section h2 {
@@ -89,7 +102,7 @@
     }
 
     .download-section {
-      background: #111;
+      background: rgba(0, 0, 0, 0.4);
       padding: 60px 20px 30px;
       text-align: center;
       border-top: 1px solid #222;
@@ -166,6 +179,24 @@
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     }
 
+    .reviews {
+      background: rgba(0, 0, 0, 0.35);
+      padding: 50px 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .review {
+      font-size: 1em;
+      color: #ccc;
+      margin: 10px auto;
+      max-width: 800px;
+      font-style: italic;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+
     footer {
       margin-top: 60px;
       padding: 30px 20px;
@@ -194,6 +225,7 @@
 <body>
 
   <header class="fade-in">
+    <img src="TelemontisLogo.png" alt="Telemontis Logo" class="logo" />
     <h1>Welcome, to <span>Telemontis</span></h1>
     <p>The AI-powered animation plugin for Roblox creators.</p>
   </header>
@@ -235,6 +267,13 @@ Get Key.
 After that press Inject and inside of File of Roblox Studio press Open with, and find Telemontis.
       </div>
     </div>
+  </section>
+
+  <section class="reviews fade-in">
+    <h2>What People Are Saying</h2>
+    <p class="review">"I made my first full-body animation in under 10 minutes. This plugin is insane!" — User137</p>
+    <p class="review">"Better than anything I've tried before. Totally changed how I animate." — GhostyDev</p>
+    <p class="review">"It’s like magic. Upload video, click a few buttons, done." — ScriptWiz</p>
   </section>
 
   <footer class="fade-in">
