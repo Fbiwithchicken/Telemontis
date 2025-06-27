@@ -155,6 +155,35 @@
       margin-right: auto;
     }
 
+    .footer-icons img {
+      width: 24px;
+      margin: 0 8px;
+      opacity: 0.6;
+      transition: opacity 0.2s;
+    }
+
+    .footer-icons img:hover {
+      opacity: 1;
+    }
+
+    .reviews {
+      background: rgba(0, 0, 0, 0.35);
+      padding: 50px 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .review {
+      font-size: 1em;
+      color: #ccc;
+      margin: 10px auto;
+      max-width: 800px;
+      font-style: italic;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+
     footer {
       margin-top: 60px;
       padding: 30px 20px;
@@ -166,7 +195,6 @@
   </style>
 </head>
 <body>
-
   <header class="fade-in">
     <img src="telemontislogo.png" alt="Telemontis Logo" class="logo" />
     <h1>Welcome to <span>Telemontis</span></h1>
@@ -177,15 +205,15 @@
     <h2>UI Showcase</h2>
     <div class="mockup">
       <img src="image1.jpg" alt="UI 1">
-      <img src="image2.png" alt="UI 2">
-      <img src="image3.png" alt="UI 3">
+      <img src="image2.jpg" alt="UI 2">
+      <img src="image3.jpg" alt="UI 3">
     </div>
   </section>
 
   <section class="section fade-in">
     <h2>Animation Showcase</h2>
     <div class="full-image">
-      <img src="demo.png" alt="Animation Demo">
+      <img src="demo.jpg" alt="Animation Demo">
     </div>
   </section>
 
@@ -220,8 +248,40 @@
     </div>
   </section>
 
+  <section class="section fade-in">
+    <h2>FAQ</h2>
+    <ul class="features">
+      <li><strong>Q: Is Telemontis safe to use?</strong><br>A: Yes. Everything runs locally — no internet uploads or hidden scripts.</li>
+      <li><strong>Q: Can I use Telemontis on Mac?</strong><br>A: Currently, only Windows is supported.</li>
+      <li><strong>Q: Do I need Blender installed?</strong><br>A: Only if you're exporting to custom rigs. For normal use, Blender isn't required.</li>
+      <li><strong>Q: What file types are supported?</strong><br>A: MP4 videos are currently supported for animation input.</li>
+      <li><strong>Q: Is R6 animation supported?</strong><br>A: Yes! Telemontis works with R6, R15, and even custom humanoid rigs.</li>
+    </ul>
+  </section>
+
+  <section class="section fade-in">
+    <h2>Changelog</h2>
+    <ul class="features">
+      <li>🛠️ <strong>v1.3</strong> — Added Blender export support, smoother motion transitions.</li>
+      <li>⚡ <strong>v1.2</strong> — Added full R6 rig support and improved performance.</li>
+      <li>🚀 <strong>v1.0</strong> — Initial release with MP4-to-Roblox animation support.</li>
+    </ul>
+  </section>
+
+  <section class="reviews fade-in">
+    <h2>What People Are Saying</h2>
+    <p class="review">"I made my first full-body animation in under 10 minutes. This plugin is insane!" — User137</p>
+    <p class="review">"Better than anything I've tried before. Totally changed how I animate." — GhostyDev</p>
+    <p class="review">"It’s like magic. Upload video, click a few buttons, done." — ScriptWiz</p>
+  </section>
+
   <footer class="fade-in">
     <p>©2025 Telemontis Software</p>
+    <div class="footer-icons">
+      <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/discord.svg" alt="Discord" /></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/gmail.svg" alt="Email" /></a>
+      <a href="#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/readthedocs.svg" alt="Docs" /></a>
+    </div>
   </footer>
 
 </body>
